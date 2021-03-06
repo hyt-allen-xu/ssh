@@ -18,4 +18,6 @@ jobs:
      - name: Don't kill instace
        if: ${{ failure() }}
        run: sleep 6h
-            sleep 6h
+     - name: Continue
+       if: ${{ failure() }}
+       run: sleep 6h
